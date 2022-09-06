@@ -1,0 +1,16 @@
+// Variable configurations for things like colors, fonts, sizes, etc…
+@use "itcss/01-settings.scss" as *;
+
+// Globally used mixins and functions
+@use "itcss/02-tools.scss" as *; 
+
+// CSS resets and normalizing rules to create a foundation for your styles
+@use "itcss/03-generic.scss" as *;
+
+// Style rules for bare HTML elements (like h1 or button)
+@use "itcss/04-elements.scss" as *;
+
+/*
+- We add rest of CSS Objects and Components directly inside each component
+- We avoid to use Trumps at all cost
+*/
