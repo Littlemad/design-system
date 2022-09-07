@@ -26,8 +26,15 @@ $space-xxs: toRem(2);
 $font-fallback: "helvetica, arial, sans serif"; 
 $font-family-primary:"Lato", #{$font-fallback};
 
+$font-size-xl: toRem(32);
+$line-height-xl: toRem(36);
+
+$font-size-l: toRem(24);
+$line-height-l: toRem(28);
+
 $font-size-m: toRem(16);
 $line-height-m: toRem(20);
+
 
 $h1: toRem(48);
 $h1-line-height: toRem(48);

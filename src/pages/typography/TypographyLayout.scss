@@ -1,5 +1,16 @@
 @use '../../styles/01-settings' as *;
 @use '../../styles/02-tools' as *;
+@use '../../styles/04-elements' as *;
+
+.box-typography__select-font{
+    margin-bottom: $space-m;
+    font-weight: bold; 
+}
+.box-typography__select-input{
+    @extend .font-size-m;
+    padding: $space-xs;
+    margin-left:$space-s;
+}
 
 .box-headings__titles{
     h1, h2, h3, h4, h5, h6{
@@ -9,12 +20,12 @@
 
 .box-pragraphs{
     .col2 p{
-        font-size: toRem(24);
-        line-height: toRem(28);
+        font-size: $font-size-l;
+        line-height: $line-height-l;
     }
     .col3 p{
-        font-size: toRem(32);
-        line-height: toRem(36);
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
     }      
 }
 

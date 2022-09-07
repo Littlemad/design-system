@@ -5,6 +5,8 @@ import Navigation from "./Navigation";
 import PageHome from "../../pages/home/Home";
 import PageIcons from "../../pages/icons/Icons";
 import PageTypography from "../../pages/typography/Typography";
+import PageColors from "../../pages/colors/Colors";
+import PageGridSystem from "../../pages/grid/GridSystem";
 
 import "./RoutesLayout.scss";
 
@@ -21,6 +23,8 @@ function RoutesLayout() {
 						<Route path="/" element={<PageHome />} />
 						<Route path="icons" element={<PageIcons />} />
 						<Route path="typography" element={<PageTypography />} />
+						<Route path="colors" element={<PageColors />} />
+						<Route path="grid-system" element={<PageGridSystem />} />
 					</Routes>
 				</main>
 			</div>

@@ -17,6 +17,22 @@ function Navigation() {
 				<li className="main-nav__li">
 					<NavLink
 						className={({isActive}) => "main-nav__link" + (isActive ? " main-nav--active" : "")}
+						to="/colors"
+					>
+						Colors
+					</NavLink>
+				</li>
+				<li className="main-nav__li">
+					<NavLink
+						className={({isActive}) => "main-nav__link" + (isActive ? " main-nav--active" : "")}
+						to="/grid-system"
+					>
+						Grid System
+					</NavLink>
+				</li>
+				<li className="main-nav__li">
+					<NavLink
+						className={({isActive}) => "main-nav__link" + (isActive ? " main-nav--active" : "")}
 						to="/icons"
 					>
 						Icons

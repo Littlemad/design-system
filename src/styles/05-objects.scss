@@ -1,11 +1,16 @@
 @use '01-settings' as *;
 
 // GRID SYSTEM
-
 .cols{
     display:grid;
     grid-gap:$space-l;
 }
+
+// LISTS
+.list{
+    margin-left:$space-l;
+}
+.list__li{list-style-type:disc; margin-bottom:$space-s;}
 
 // CONTAINERS
 .box{

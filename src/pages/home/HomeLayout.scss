@@ -1,0 +1,17 @@
+@use '../../styles/01-settings' as *;
+@use '../../styles/02-tools' as *;
+@use '../../styles/04-elements' as *;
+
+
+.box-presentation__txt{
+    @extend .font-size-xl;
+    width: 100%;
+    color:$grey-d1;
+    margin-bottom: $space-xl;
+}
+
+@media only screen and (min-width: $break-tablet-landscape){ // 992px
+    .box-presentation__txt{
+        width: 65%;
+    }
+}
