@@ -6,4 +6,7 @@
 	margin:auto; 
 	background:$white;
 }
-.main-header, .main-content{text-align:left;}
+.main-header, .main-content, .main-footer{text-align:left;}
+
+.main-footer{margin:$space-xxl 0 0;}
+.main-footer__title{margin-bottom:$space-m;}
