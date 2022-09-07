@@ -1,0 +1,28 @@
+@use '01-settings' as *;
+
+
+@media only screen and (min-width: $break-mobile){ // 576px
+    .page{width:$break-mobile;}
+}
+
+@media only screen and (min-width: $break-tablet-potrait){ // 768px
+    .page{width:$break-tablet-potrait;}
+}
+
+@media only screen and (min-width: $break-tablet-landscape){ // 992px
+    .page{width:$break-tablet-landscape;}
+}
+
+@media only screen and (min-width: $break-desktop){ // 1200px
+    .page{width:$break-desktop;}
+}
+
+/* NOT USED
+@media only screen and (min-width: $break-desktop-l){ // 1440px
+
+}
+
+@media only screen and (min-width: $break-desktop-xl){ // 1920px
+
+}
+*/

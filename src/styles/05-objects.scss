@@ -1,0 +1,28 @@
+@use '01-settings' as *;
+
+// GRID SYSTEM
+
+.cols{
+    display:grid;
+    grid-gap:$space-l;
+}
+
+// CONTAINERS
+.box{
+    border:1px solid $grey-l;
+    padding:$space-m;
+    margin-bottom:$space-m;
+}
+
+.box__title{
+    color:$green;
+    margin-bottom:$space-m;
+}
+
+// BUTTONS
+.btn{
+    border:1px solid $grey; 
+    background:$white;
+    padding:$space-s $space-m;
+    border-radius: $radius-m;
+}

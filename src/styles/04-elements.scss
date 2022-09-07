@@ -1,0 +1,36 @@
+@use '01-settings' as *;
+@use '02-tools' as *;
+
+// GENERIC
+html{height:100%;}
+body{
+    background:$grey-l2; min-height:100%;
+}
+
+// LINK
+a{text-decoration:none; color:$link;}
+a:visited{color:$link-visited;}
+a:hover, a:focus{text-decoration:underline;}
+a:active{color:$link-active;}
+
+// TYPOGRAPHY
+body{
+    text-align:center;
+    font-family: $font-family-primary;
+    font-size: $font-size-m; 
+    line-height: $line-height-m;
+}
+
+.regular{font-weight:400;}
+strong, .bold{font-weight:bold;}
+em, .italic{font-style:italic;}
+p{margin-bottom: $space-s;}
+
+.h1{font-size: $h1; line-height: $h1-line-height;}
+.h2{font-size: $h2; line-height: $h2-line-height;}
+.h3{font-size: $h3; line-height: $h3-line-height;}
+.h4{font-size: $h4; line-height: $h4-line-height;}
+.h5{font-size: $h5; line-height: $h5-line-height;}
+.h6{font-size: $h6; line-height: $h6-line-height;}
+
+

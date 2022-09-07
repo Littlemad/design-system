@@ -13,11 +13,10 @@ function RoutesLayout() {
 		<>
 			<div className="page">
 				<header class="main-header">
-					<h1 class="h1">Design System</h1>
+					<h1 class="main-header__title h1">Design System</h1>
 				</header>
+				<Navigation />
 				<main className="main-content">
-					<Navigation />
-
 					<Routes>
 						<Route path="/" element={<PageHome />} />
 						<Route path="icons" element={<PageIcons />} />

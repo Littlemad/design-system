@@ -1,1 +1,10 @@
-.page{padding:2rem;}
+@use './../../styles/01-settings.scss' as *;
+
+.page{
+	min-height:100vh;
+	padding:$space-xl; 
+	margin:auto; 
+	background:$white;
+	word-break: break-all;
+}
+.main-header, .main-content{text-align:left;}
