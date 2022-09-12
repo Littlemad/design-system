@@ -6,11 +6,6 @@
     margin-bottom: $space-m;
     font-weight: bold; 
 }
-.box-typography__select-input{
-    @extend .font-size-m;
-    padding: $space-xs;
-    margin-left:$space-s;
-}
 
 .box-headings__titles{
     h1, h2, h3, h4, h5, h6{

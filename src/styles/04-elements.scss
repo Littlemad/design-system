@@ -21,6 +21,9 @@ body{
     line-height: $line-height-m;
 }
 
+.lato{font-family: $font-family-primary;}
+.georgia{font-family: $font-family-secondary;}
+
 .regular{font-weight:400;}
 strong, .bold{font-weight:bold;}
 em, .italic{font-style:italic;}
@@ -36,4 +39,11 @@ p{margin-bottom: $space-s;}
 .font-size-m{font-size: $font-size-m; line-height: $line-height-m;}
 .font-size-l{font-size: $font-size-l; line-height: $line-height-l;}
 .font-size-xl{font-size: $font-size-xl; line-height: $line-height-xl;}
+
+// FORMS
+select{
+    @extend .font-size-m;
+    padding: $space-xs;
+    margin-left:$space-s;
+}
 

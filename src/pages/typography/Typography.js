@@ -1,17 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
+import Select from "../../components/elements/Select";
+import dataJSON from "../../data/data.json";
 import "./TypographyLayout.scss";
 
 function Typography() {
+	const options = dataJSON.typography;
+	const [FontStyle, setFontStyle] = useState(options[0].value);
+
 	return (
 		<>
 			<div className="box-typography">
 				<div className="box-typography__select-font">
 					Select the font that you want to visualize:
-					<select className="box-typography__select-input">
-						<option>choose font</option>
-					</select>
+					<Select options={options} value={FontStyle} onChange={setFontStyle} />
 				</div>
-				<div className="box box-headings">
+				<div className={`box box-headings ${FontStyle}`}>
 					<h2 className="h2 bold box__title">Headings</h2>
 
 					<div className="box-headings__titles">
@@ -43,7 +46,7 @@ function Typography() {
 						</div>
 					</div>
 				</div>
-				<div className="box box-pragraphs">
+				<div className={`box box-pragraphs ${FontStyle}`}>
 					<h2 className="h2 bold box__title">Font size</h2>
 					<div className="cols">
 						<div className="col col1">
