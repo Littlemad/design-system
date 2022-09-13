@@ -24,8 +24,10 @@ $space-xxs: toRem(2);
 
 // --TYPOGRAPHY
 $font-fallback-sansSerif: "helvetica, arial, sans serif"; 
+$font-fallback-serif: "times new roman, times, serif"; 
 $font-family-primary:"Lato", #{$font-fallback-sansSerif};
-$font-family-secondary: "Georgia", #{$font-fallback-sansSerif};
+$font-family-secondary: "Georgia", #{$font-fallback-serif};
+$font-family-tertiary: "Nunito", #{$font-fallback-sansSerif};
 
 $font-size-xl: toRem(32);
 $line-height-xl: toRem(36);

@@ -1,6 +1,28 @@
 {
+	"icons": [
+		{"name": "arrow"},
+		{"name": "home"},
+		{"name": "pencil"},
+		{"name": "pricetag"},
+		{"name": "cart"},
+		{"name": "phone"},
+		{"name": "user"},
+		{"name": "quoteleft"},
+		{"name": "quoteright"},
+		{"name": "search"},
+		{"name": "cog"},
+		{"name": "bin"},
+		{"name": "plus"},
+		{"name": "minus"},
+		{"name": "info"},
+		{"name": "blocked"},
+		{"name": "cross"},
+		{"name": "checkmark"},
+		{"name": "embed"}
+	],
 	"typography": [
-		{"value": "lato", "name": "Lato 🍏"},
-		{"value": "georgia", "name": "Georgia 🍌"}
+		{"value": "lato", "name": "Lato"},
+		{"value": "georgia", "name": "Georgia"},
+		{"value": "nunito", "name": "Nunito"}
 	]
 }
