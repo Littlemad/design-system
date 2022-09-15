@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import PropTypes from "prop-types";
 import dataJSON from "../../data/data.json";
 import Highlighter from "../../components/highlighter/Highlighter";
@@ -31,7 +31,7 @@ const IconList = () => {
 	);
 };
 
-const Icon = ({name, size, label}) => (
+const SvgIcon = ({name, size, label}) => (
 	<svg className={`icon icon-${name} icon--size-${size}`} role="img" aria-label={label}>
 		<use xlinkHref={`${IconPath}#${name}`} />
 	</svg>
@@ -66,9 +66,20 @@ const Icon = ({name, color, size}) => (
 
 const CodeA3 = `<Icon name="home" size="s" label="Home symbol" />`;
 
-const Icons = () => {
+const Icon = (iconName, size) =>
+	iconsJSON.map((icons) => {
+		if (icons.name === iconName) {
+			return <SvgIcon name={icons.name} size={size} label={icons.desc} />;
+		} else {
+			return null;
+		}
+	});
+
+const PageIcons = () => {
 	return (
 		<>
+			{Icon("home", "s")}
+
 			<div className="box-icons">
 				<h2 className="h2 bold box-icons__title">Icons system with SVG sprites</h2>
 				<p>
@@ -96,7 +107,7 @@ const Icons = () => {
 					<br />
 					Icon example
 					<br />
-					<Icon name="home" size="l" label="Home symbol" />
+					<SvgIcon name="home" size="l" label="Home symbol" />
 				</div>
 				<div className="box box-icon-list">
 					<h3 className="h2 bold box__title">Icons list</h3>
@@ -108,16 +119,22 @@ const Icons = () => {
 				</div>
 				<div className="box box-icon-size">
 					<h3 className="h2 bold box__title">Icons size</h3>
+
+					<SvgIcon name="home" size="xs" label="Home symbol" />
+					<SvgIcon name="home" size="s" label="Home symbol" />
+					<SvgIcon name="home" size="m" label="Home symbol" />
+					<SvgIcon name="home" size="l" label="Home symbol" />
+					<SvgIcon name="home" size="xl" label="Home symbol" />
 				</div>
 			</div>
 		</>
 	);
 };
 
-Icon.propTypes = {
+SvgIcon.propTypes = {
 	name: PropTypes.string.isRequired,
 	color: PropTypes.string,
 	size: PropTypes.number,
 };
 
-export default Icons;
+export default PageIcons;
