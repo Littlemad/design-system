@@ -1,4 +1,5 @@
 @use '01-settings' as *;
+@use '02-tools' as *;
 
 // GRID SYSTEM
 .cols{
@@ -7,9 +8,7 @@
 }
 
 // LISTS
-.list{
-    margin-left:$space-l;
-}
+.list{margin-left:$space-l;}
 .list__li{list-style-type:disc; margin-bottom:$space-s;}
 
 // CONTAINERS
@@ -31,3 +30,9 @@
     padding:$space-s $space-m;
     border-radius: $radius-m;
 }
+
+// ICONS
+.icon--size-xs{width:toRem(16); height:toRem(16);}
+.icon--size-s{width:toRem(24); height:toRem(24);}
+.icon--size-m{width:toRem(32); height:toRem(32);}
+.icon--size-l{width:toRem(48); height:toRem(48);}

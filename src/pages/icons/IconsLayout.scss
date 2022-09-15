@@ -1,0 +1,7 @@
+@use '../../styles/01-settings' as *;
+
+.box-icons__title{margin-bottom: $space-s;}
+.box-iconlist{
+    text-transform:capitalize; display:grid; grid-gap:$space-m; grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.box-iconlist_label{margin-bottom:$space-s;}
