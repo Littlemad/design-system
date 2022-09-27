@@ -1,0 +1,4 @@
+// INFO for adding props if condition are true 
+
+<ul {...(hasLayout ? {className: `svgiconlist
+svgiconlist--grid`} : {className: "svgiconlist"})}>

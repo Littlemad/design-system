@@ -10,16 +10,7 @@ const PageIcons = () => {
 	return (
 		<>
 			<div className="box-icons">
-				<div className="box box-icon-list">
-					<h3 className="h2 bold box__title">Icons list</h3>
-					<p className="spacing">
-						Use the name of the icon as lowercase text for naming your svg icon
-					</p>
-
-					<SvgIconList grid />
-				</div>
-
-				<h2 className="h2 bold box-icons__title">Icons system with SVG sprites</h2>
+				<h2 className="h2 bold box-icons__title">Using SVG sprites</h2>
 				<p>
 					Image sprites have been a good-practice technique for many years. If you require a number
 					of regularly used graphics, you place them in a single image rather than individual files.
@@ -28,6 +19,28 @@ const PageIcons = () => {
 					The most common technique is to define individual images within an SVG &lt;symbol&gt;.
 					Here a code example on how to use it inside React:
 				</p>
+
+				<div className="box box-icon-list">
+					<h3 className="h2 bold box__title">Icons list</h3>
+					<p className="spacing">
+						Use the name of the icon as lowercase text for naming your svg icon
+					</p>
+
+					<SvgIconList grid size="l" />
+					<br />
+					<br />
+					<h3 className="h2 bold box__title">Code for showing all Icons</h3>
+					<p>
+						It is possible to add the grid style to help organise the icons, or adding a size value
+					</p>
+					<Highlighter code={HighlightCode.SVGList1} language="markup" />
+
+					<p>
+						It is possible as well to avoid any kind of definition, and you can style yourself how
+						the list might want to appear.
+					</p>
+					<Highlighter code={HighlightCode.SVGList2} language="markup" />
+				</div>
 
 				<div className="box box-single-icon">
 					<h3 className="h2 bold box__title">Loading a single icon from SVG sprite</h3>

@@ -1,5 +1,8 @@
 // WRITE ONLY HIGLIGHTED CODE
 
+const SVGList1 = `<SvgIconList grid size="l" />`;
+const SVGList2 = `<SvgIconList />`;
+
 const SingleIcon1 = `{
 "icons": [
 	{"name": "arrow", "desc": "An arrow indicating a direction"},
@@ -30,4 +33,4 @@ return iconsJSON.map((icons) => (
 const SingleIcon4 = `<Icon name="home" size="l" />`;
 const SingleIcon5 = `<Icon name="home" size="l" label="Custom description" />`;
 
-export {SingleIcon1, SingleIcon2, SingleIcon3, SingleIcon4, SingleIcon5};
+export {SingleIcon1, SingleIcon2, SingleIcon3, SingleIcon4, SingleIcon5, SVGList1, SVGList2};

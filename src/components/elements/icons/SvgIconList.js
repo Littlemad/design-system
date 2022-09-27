@@ -8,19 +8,18 @@ const iconsJSON = dataJSON.icons;
 
 const SvgIconList = (props) => {
 	const hasLayout = props.grid;
+	const hasIconSize = props.size;
 
 	return (
 		<>
 			<ul className={`svgiconlist ${hasLayout ? "svgiconlist--grid" : ""}`}>
-				{/*			<ul {...(hasLayout ? {className: `svgiconlist svgiconlist--grid`} : {className: "svgiconlist"})}
-				>
- */}
-
 				{iconsJSON.map((icons) => (
 					<li className="svgiconlist_li" key={icons.name}>
 						<h4 className="h4 svgiconlist_label">{icons.name}</h4>
 						<svg
-							className={`icon icon-${icons.name} icon--size-l`}
+							className={`icon icon-${icons.name} ${
+								hasIconSize ? `icon--size-${props.size}` : "icon--size-m"
+							}`}
 							role="img"
 							aria-label={icons.desc}
 							key={icons.name}
@@ -36,6 +35,7 @@ const SvgIconList = (props) => {
 
 SvgIconList.propTypes = {
 	grid: PropTypes.bool,
+	size: PropTypes.string,
 };
 
 export default SvgIconList;

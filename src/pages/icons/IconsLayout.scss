@@ -1,3 +1,6 @@
 @use '../../styles/01-settings' as *;
+@use '../../styles/02-tools' as *;
 
+.box-icons p{max-width:toRem(700);}
 .box-icons__title{margin-bottom: $space-s;}
+
