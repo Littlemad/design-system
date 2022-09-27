@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import dataJSON from "../../data/data.json";
-import Select from "../../components/elements/Select";
+import Select from "../../components/elements/select/Select";
 import "./TypographyLayout.scss";
 
 function Typography() {

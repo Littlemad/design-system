@@ -1,6 +1,5 @@
 @use '01-settings' as *;
 
-
 @media only screen and (min-width: $break-mobile){ // 576px
     .page{width:$break-mobile;}
 }

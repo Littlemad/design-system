@@ -1,41 +1,10 @@
-import React, {useEffect} from "react";
-import PropTypes from "prop-types";
-import dataJSON from "../../data/data.json";
+import React from "react";
 import Highlighter from "../../components/highlighter/Highlighter";
-
-import IconPath from "./../../assets/svg/icons.svg";
+import SvgIcon from "../../components/elements/icons/SvgIcon";
+// import BasicSvgIcon from "../../components/elements/icons/BasicSvgIcon";
+import IconList from "../../components/elements/icons/IconList";
 
 import "./IconsLayout.scss";
-
-const iconsJSON = dataJSON.icons;
-
-const IconList = () => {
-	return (
-		<ul className="box-iconlist">
-			{iconsJSON.map((icons) => (
-				<>
-					<li className="box-iconlist_li">
-						<h4 className="h4 box-iconlist_label">{icons.name}</h4>
-						<svg
-							className={`icon icon-${icons.name} icon--size-l`}
-							role="img"
-							aria-label={icons.desc}
-							key={icons.name}
-						>
-							<use xlinkHref={`${IconPath}#${icons.name}`} />
-						</svg>
-					</li>
-				</>
-			))}
-		</ul>
-	);
-};
-
-const SvgIcon = ({name, size, label}) => (
-	<svg className={`icon icon-${name} icon--size-${size}`} role="img" aria-label={label}>
-		<use xlinkHref={`${IconPath}#${name}`} />
-	</svg>
-);
 
 const CodeImport = `{
 	"icons": [
@@ -66,20 +35,9 @@ const Icon = ({name, color, size}) => (
 
 const CodeA3 = `<Icon name="home" size="s" label="Home symbol" />`;
 
-const Icon = (iconName, size) =>
-	iconsJSON.map((icons) => {
-		if (icons.name === iconName) {
-			return <SvgIcon name={icons.name} size={size} label={icons.desc} />;
-		} else {
-			return null;
-		}
-	});
-
 const PageIcons = () => {
 	return (
 		<>
-			{Icon("home", "s")}
-
 			<div className="box-icons">
 				<h2 className="h2 bold box-icons__title">Icons system with SVG sprites</h2>
 				<p>
@@ -107,7 +65,7 @@ const PageIcons = () => {
 					<br />
 					Icon example
 					<br />
-					<SvgIcon name="home" size="l" label="Home symbol" />
+					{SvgIcon("home", "l")}
 				</div>
 				<div className="box box-icon-list">
 					<h3 className="h2 bold box__title">Icons list</h3>
@@ -119,22 +77,23 @@ const PageIcons = () => {
 				</div>
 				<div className="box box-icon-size">
 					<h3 className="h2 bold box__title">Icons size</h3>
+					www
+					{SvgIcon("home", "s")}
+					{SvgIcon("home", "m")}
+					{/*
+					<SvgIcon name="home" size="s" />
 
-					<SvgIcon name="home" size="xs" label="Home symbol" />
-					<SvgIcon name="home" size="s" label="Home symbol" />
-					<SvgIcon name="home" size="m" label="Home symbol" />
-					<SvgIcon name="home" size="l" label="Home symbol" />
-					<SvgIcon name="home" size="xl" label="Home symbol" />
+	*/}
+					{/*
+					<BasicSvgIcon name="home" size="s" label="Home symbol" />
+					<BasicSvgIcon name="home" size="m" label="Home symbol" />
+					<BasicSvgIcon name="home" size="l" label="Home symbol" />
+					<BasicSvgIcon name="home" size="xl" label="Home symbol" />
+	*/}
 				</div>
 			</div>
 		</>
 	);
-};
-
-SvgIcon.propTypes = {
-	name: PropTypes.string.isRequired,
-	color: PropTypes.string,
-	size: PropTypes.number,
 };
 
 export default PageIcons;
