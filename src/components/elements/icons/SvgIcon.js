@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import dataJSON from "../../../data/data.json";
-// import BasicSvgIcon from "./BasicSvgIcon";
 import IconPath from "../../../assets/svg/icons.svg";
 
 const iconsJSON = dataJSON.icons;
 
-const SvgIcon = (iconName, size) => {
-	const myIcon = iconsJSON.find((e) => e.name === iconName);
+const SvgIcon = (props) => {
+	const myIcon = iconsJSON.find((e) => e.name === props.name);
+	const hasLabel = props.label;
 
 	return (
 		<>
 			<svg
-				className={`icon icon-${myIcon.name} icon--size-${size}`}
+				className={`icon icon-${myIcon.name} icon--size-${props.size}`}
 				role="img"
-				aria-label={myIcon.desc}
+				{...(hasLabel ? {"aria-label": hasLabel} : {"aria-label": myIcon.desc})}
 				key={myIcon.name}
 			>
 				<use xlinkHref={`${IconPath}#${myIcon.name}`} />
@@ -26,6 +26,7 @@ const SvgIcon = (iconName, size) => {
 SvgIcon.propTypes = {
 	name: PropTypes.string.isRequired,
 	size: PropTypes.string.isRequired,
+	label: PropTypes.string,
 };
 
 export default SvgIcon;
