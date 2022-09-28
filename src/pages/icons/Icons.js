@@ -17,8 +17,38 @@ const PageIcons = () => {
 				</p>
 				<p>
 					The most common technique is to define individual images within an SVG &lt;symbol&gt;.
-					Here a code example on how to use it inside React:
 				</p>
+			</div>
+
+			<div className="box box-single-icon">
+				<h3 className="h2 bold box__title">Implementing SVG sprite in your react project</h3>
+				<p>Create a JSON with your icon list of names matching the symbol id name</p>
+				<Highlighter code={HighlightCode.SingleIcon1} language="js" />
+				<br />
+				Male an SVG Sprite similar to this example filled with SVG Symbol all of the same viewbox
+				size to keep size consistency. (You can build one using{" "}
+				<a href="https://icomoon.io/" target="_blank" rel="noreferrer">
+					Iconmoon
+				</a>{" "}
+				service).
+				<Highlighter code={HighlightCode.SingleIcon2} language="markup" />
+				<br />
+				Create a Component
+				<Highlighter code={HighlightCode.SingleIcon3} language="js" />
+				<br />
+				Insert a Component in your code (it will detect automatically the label from your JSON)
+				<Highlighter code={HighlightCode.SingleIcon4} language="js" />
+				<SvgIcon name="home" size="l" />
+				<br />
+				<br />
+				Insert a Component and add your custom label
+				<Highlighter code={HighlightCode.SingleIcon5} language="js" />
+				<SvgIcon name="home" size="l" label="test" />
+			</div>
+
+			<div className="box-icon-list">
+				<h2 className="h2 bold box-icons__title">Visualization &amp; Customization</h2>
+				<p>How to access and use SVG sprites in your project</p>
 
 				<div className="box box-icon-list">
 					<h3 className="h2 bold box__title">Icons list</h3>
@@ -42,31 +72,34 @@ const PageIcons = () => {
 					<Highlighter code={HighlightCode.SVGList2} language="markup" />
 				</div>
 
-				<div className="box box-single-icon">
-					<h3 className="h2 bold box__title">Loading a single icon from SVG sprite</h3>
-					<p>Create a JSON with your icon list of names matching the symbol id name</p>
-					<Highlighter code={HighlightCode.SingleIcon1} language="js" />
-					<br />
-					Have an SVG like this example filled with SVG Symbol all of the same viewbox size
-					<Highlighter code={HighlightCode.SingleIcon2} language="markup" />
-					<br />
-					Create a Component
-					<Highlighter code={HighlightCode.SingleIcon3} language="js" />
-					<br />
-					Insert a Component in your code (it will detect automatically the label from your JSON)
-					<Highlighter code={HighlightCode.SingleIcon4} language="js" />
-					<SvgIcon name="home" size="l" />
-					<br />
-					<br />
-					Insert a Component and add your custom label
-					<Highlighter code={HighlightCode.SingleIcon5} language="js" />
-					<SvgIcon name="home" size="l" label="test" />
-				</div>
-
 				<div className="box box-icon-size">
 					<h3 className="h2 bold box__title">Icons size</h3>
 
-					<p>In the case that you need to add an SVG that it is not present in a sprite</p>
+					<p>We use 4 type of sizes:</p>
+					<ul className="list spacing">
+						<li className="list__li">Small - 24px </li>
+						<li className="list__li">Medium - 32px</li>
+						<li className="list__li">Large - 48px</li>
+						<li className="list__li">Extra large - 64px</li>
+					</ul>
+
+					<Highlighter code={HighlightCode.IconsSize1} language="js" />
+					<SvgIcon name="home" size="s" />
+					<br />
+					<br />
+
+					<Highlighter code={HighlightCode.IconsSize2} language="js" />
+					<SvgIcon name="home" size="m" />
+					<br />
+					<br />
+
+					<Highlighter code={HighlightCode.IconsSize3} language="js" />
+					<SvgIcon name="home" size="l" />
+					<br />
+					<br />
+
+					<Highlighter code={HighlightCode.IconsSize4} language="js" />
+					<SvgIcon name="home" size="xl" />
 				</div>
 			</div>
 		</>
