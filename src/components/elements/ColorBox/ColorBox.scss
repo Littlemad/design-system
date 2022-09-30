@@ -1,13 +1,6 @@
 @use '../../../styles/01-settings' as *;
 @use '../../../styles/02-tools' as *;
 
-.colorbox{width:toRem(100); box-shadow:0 3px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
-.colorbox__color{height:toRem(100);}
+.colorbox{width:toRem(120); box-shadow:0 3px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+.colorbox__color{height:toRem(120);}
 .colorbox__val{padding:$space-m;}
-
-
-.colorbox__color--primary-d2{background:$color-primary-d2;}
-.colorbox__color--primary-d1{background:$color-primary-d1;}
-.colorbox__color--primary{background:$color-primary;}
-.colorbox__color--primary-l1{background:$color-primary-l1;}
-.colorbox__color--primary-l2{background:$color-primary-l2;}

@@ -7,14 +7,16 @@ const colorsJSON = dataJSON.colors;
 const ColorBox = (props) => {
 	const myColor = colorsJSON.find((e) => e.color === props.color);
 
+	console.log(myColor);
+
 	return (
 		<>
 			<div className="colorbox">
-				<div className={`colorbox__color colorbox__color--${myColor.color}`}></div>
+				<div className={`colorbox__color color-bg--${myColor.color}`}></div>
 				<div className="colorbox__val">
-					{myColor.name}
+					<strong>{myColor.value}</strong>
 					<br />
-					{myColor.value}
+					{myColor.name}
 				</div>
 			</div>
 		</>

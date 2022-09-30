@@ -13,7 +13,7 @@
 
 // CONTAINERS
 .box{
-    border:1px solid $grey-l1;
+    border:1px solid $color-grey-l1;
     padding:$space-m;
     margin-bottom:$space-m;
 }
@@ -25,8 +25,8 @@
 
 // BUTTONS
 .btn{
-    border:1px solid $grey; 
-    background:$white;
+    border:1px solid $color-grey; 
+    background:$color-white;
     padding:$space-s $space-m;
     border-radius: $radius-m;
 }
@@ -37,3 +37,33 @@
 .icon--size-m{width:toRem(32); height:toRem(32);}
 .icon--size-l{width:toRem(48); height:toRem(48);}
 .icon--size-xl{width:toRem(64); height:toRem(64);}
+
+// COLORS
+
+// --BACKGROUND COLORS
+.color-bg--black{background:$color-black;}
+.color-bg--grey-d3{background:$color-grey-d3;}
+.color-bg--grey-d2{background:$color-grey-d2;}
+.color-bg--grey-d1{background:$color-grey-d1;}
+.color-bg--grey{background:$color-grey;}
+.color-bg--grey-l1{background:$color-grey-l1;}
+.color-bg--grey-l2{background:$color-grey-l2;}
+.color-bg--grey-l3{background:$color-grey-l3;}
+.color-bg--white{background:$color-white;}
+
+.color-bg--primary-d2{background:$color-primary-d2;}
+.color-bg--primary-d1{background:$color-primary-d1;}
+.color-bg--primary{background:$color-primary;}
+.color-bg--primary-l1{background:$color-primary-l1;}
+.color-bg--primary-l2{background:$color-primary-l2;}
+
+// --TEXT COLORS
+.color-txt--black{color:$color-black;}
+.color-txt--grey-d3{color:$color-grey-d3;}
+.color-txt--grey-d2{color:$color-grey-d2;}
+.color-txt--grey-d1{color:$color-grey-d1;}
+.color-txt--grey{color:$color-grey;}
+.color-txt--grey-l1{color:$color-grey-l1;}
+.color-txt--grey-l2{color:$color-grey-l2;}
+.color-txt--grey-l3{color:$color-grey-l3;}
+.color-txt--white{color:$color-white;}

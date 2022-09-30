@@ -26,6 +26,17 @@
 		{"value": "nunito", "name": "Nunito"}
 	],
 	"colors": [
+		{"value": "#fff", "color": "white", "name": "White"},
+		{"value": "#000", "color": "black", "name": "Black"},
+
+		{"value": "#f5f5f5", "color": "grey-l3", "name": "Very Light Grey"},
+		{"value": "#eee", "color": "grey-l2", "name": "Light Grey"},
+		{"value": "#ddd", "color": "grey-l1", "name": "Lightish Grey"},
+		{"value": "#bbb", "color": "grey", "name": "Grey"},
+		{"value": "#999", "color": "grey-d1", "name": "Darkish Grey"},
+		{"value": "#666", "color": "grey-d2", "name": "Dark Grey"},
+		{"value": "#333", "color": "grey-d3", "name": "Very Dark Grey"},
+
 		{"value": "#68BBE3", "color": "primary-l2", "name": "Baby Blue"},
 		{"value": "#0E86D4", "color": "primary-l1", "name": "Blue Grotto"},
 		{"value": "#055C9D", "color": "primary", "name": "Blue"},

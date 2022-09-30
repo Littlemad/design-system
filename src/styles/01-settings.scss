@@ -38,7 +38,6 @@ $line-height-l: toRem(28);
 $font-size-m: toRem(16);
 $line-height-m: toRem(20);
 
-
 $h1: toRem(48);
 $h1-line-height: toRem(48);
 
@@ -57,21 +56,20 @@ $h5-line-height: $font-size-m;
 $h6: $font-size-m;
 $h6-line-height: $line-height-m;
 
-
 // --COLORS
 $link: #00c;
 $link-visited: #A4B;
 $link-active: #c00;
 
-$white: #fff;
-$grey-l3: #f0f0f0;
-$grey-l2: #eee;
-$grey-l1: #ddd;
-$grey: #ccc;
-$grey-d1: #999;
-$grey-d2: #666;
-$grey-d3: #333;
-$black: #000;
+$color-white: var(--color-white);
+$color-grey-l3: var(--color-grey-l3);
+$color-grey-l2: var(--color-grey-l2);
+$color-grey-l1: var(--color-grey-l1);
+$color-grey: var(--color-grey);
+$color-grey-d1: var(--color-grey-d1);
+$color-grey-d2: var(--color-grey-d2);
+$color-grey-d3: var(--color-grey-d3);
+$color-black: var(--color-black);
 
 $color-primary-l2: var(--color-primary-l2);
 $color-primary-l1: var(--color-primary-l1);
