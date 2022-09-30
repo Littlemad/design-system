@@ -1,0 +1,3 @@
+@use '../../styles/01-settings' as *;
+
+.box-palette{display:grid; grid-gap:$space-m;}

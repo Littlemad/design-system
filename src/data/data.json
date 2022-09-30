@@ -24,5 +24,12 @@
 		{"value": "lato", "name": "Lato"},
 		{"value": "georgia", "name": "Georgia"},
 		{"value": "nunito", "name": "Nunito"}
+	],
+	"colors": [
+		{"value": "#68BBE3", "color": "primary-l2", "name": "Baby Blue"},
+		{"value": "#0E86D4", "color": "primary-l1", "name": "Blue Grotto"},
+		{"value": "#055C9D", "color": "primary", "name": "Blue"},
+		{"value": "#003060", "color": "primary-d1", "name": "Navy Blue"},
+		{"value": "#001040", "color": "primary-d2", "name": "Dark Navy Blue"}
 	]
 }

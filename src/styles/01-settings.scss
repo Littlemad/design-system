@@ -67,11 +67,17 @@ $white: #fff;
 $grey-l3: #f0f0f0;
 $grey-l2: #eee;
 $grey-l1: #ddd;
-$grey-l: #ccc;
-$grey: #999;
-$grey-d1: #666;
-$grey-d2: #333;
+$grey: #ccc;
+$grey-d1: #999;
+$grey-d2: #666;
+$grey-d3: #333;
 $black: #000;
+
+$color-primary-l2: var(--color-primary-l2);
+$color-primary-l1: var(--color-primary-l1);
+$color-primary: var(--color-primary);
+$color-primary-d1: var(--color-primary-d1);
+$color-primary-d2: var(--color-primary-d2);
 
 $green: #080;
 
