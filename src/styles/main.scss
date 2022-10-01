@@ -19,6 +19,7 @@
 @use "./06-media-queries.scss" as *;
 
 /*
-- We add rest of CSS Components directly inside each component
-- We avoid to use Trumps at all cost
+- I added the rest of CSS Components directly inside each component
+- I avoid to use Trumps at all cost
+- Warning in multiple imports of files other than "tools & settings" to avoid duplication of class calls
 */

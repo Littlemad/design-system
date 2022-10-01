@@ -10,15 +10,8 @@ function Typography() {
 	return (
 		<>
 			<div className="box-typography">
-				<h2 className="h2 bold box-typography__title">Style display</h2>
-				<p>
-					A typeface is a collection of letters. While each letter is unique, certain shapes are
-					shared across letters.
-				</p>
-				<p>
-					Typefaces that are selected for their style, legibility, and readability, here some
-					example os styling.
-				</p>
+				<h2 className="h2 bold title--margin">Style display</h2>
+				<p>A typeface is a collection of letters. While each letter is unique, certain shapes are shared across letters. Typefaces that are selected for their style, legibility, and readability, here some example of styling.</p>
 
 				<div className="box-typography__select-font">
 					Select the font type that you want to visualize:

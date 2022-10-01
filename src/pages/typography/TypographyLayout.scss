@@ -1,10 +1,5 @@
 @use '../../styles/01-settings' as *;
 @use '../../styles/02-tools' as *;
-@use '../../styles/04-elements' as *;
-
-.box-typography__title{
-    margin-bottom: $space-s;
-}
 
 .box-typography__select-font{
     margin: $space-xl 0 $space-m;

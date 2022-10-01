@@ -27,8 +27,6 @@
 	],
 	"colors": [
 		{"value": "#fff", "color": "white", "name": "White"},
-		{"value": "#000", "color": "black", "name": "Black"},
-
 		{"value": "#f5f5f5", "color": "grey-l3", "name": "Very Light Grey"},
 		{"value": "#eee", "color": "grey-l2", "name": "Light Grey"},
 		{"value": "#ddd", "color": "grey-l1", "name": "Lightish Grey"},
@@ -36,11 +34,22 @@
 		{"value": "#999", "color": "grey-d1", "name": "Darkish Grey"},
 		{"value": "#666", "color": "grey-d2", "name": "Dark Grey"},
 		{"value": "#333", "color": "grey-d3", "name": "Very Dark Grey"},
+		{"value": "#000", "color": "black", "name": "Black"},
 
 		{"value": "#68BBE3", "color": "primary-l2", "name": "Baby Blue"},
 		{"value": "#0E86D4", "color": "primary-l1", "name": "Blue Grotto"},
 		{"value": "#055C9D", "color": "primary", "name": "Blue"},
 		{"value": "#003060", "color": "primary-d1", "name": "Navy Blue"},
-		{"value": "#001040", "color": "primary-d2", "name": "Dark Navy Blue"}
+		{"value": "#001040", "color": "primary-d2", "name": "Dark Navy Blue"},
+
+		{"value": "#FEF4C0", "color": "secondary-l2", "name": "Light yellow"},
+		{"value": "#FDB10B", "color": "secondary-l1", "name": "Light Orange"},
+		{"value": "#FE8535", "color": "secondary", "name": "Orange"},
+		{"value": "#FD292F", "color": "secondary-d1", "name": "Desaturated Red"},
+		{"value": "#B20000", "color": "secondary-d2", "name": "Light Brown"},
+
+		{"value": "#390", "color": "success", "name": "Success"},
+		{"value": "#fc0", "color": "warn", "name": "Warning"},
+		{"value": "#c30", "color": "fail", "name": "Failure"}
 	]
 }

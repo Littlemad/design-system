@@ -1,6 +1,10 @@
 @use '../../../styles/01-settings' as *;
 @use '../../../styles/02-tools' as *;
 
-.colorbox{width:toRem(120); box-shadow:0 3px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.1);}
+.colorbox{width:100%; border:1px solid $color-grey;}
+.colorbox__name{padding:$space-s $space-m;}
 .colorbox__color{height:toRem(120);}
-.colorbox__val{padding:$space-m;}
+.colorbox__val{
+    padding:$space-s $space-m;;
+    p:last-child{margin-bottom:0;}
+}

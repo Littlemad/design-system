@@ -28,18 +28,21 @@ body{
 .regular{font-weight:400;}
 strong, .bold{font-weight:bold;}
 em, .italic{font-style:italic;}
-p{margin-bottom: $space-s;}
+p{margin-bottom:$space-s; max-width:toRem(700);}
 
-.h1{font-size: $h1; line-height: $h1-line-height;}
-.h2{font-size: $h2; line-height: $h2-line-height;}
-.h3{font-size: $h3; line-height: $h3-line-height;}
-.h4{font-size: $h4; line-height: $h4-line-height;}
-.h5{font-size: $h5; line-height: $h5-line-height;}
-.h6{font-size: $h6; line-height: $h6-line-height;}
+
+.h1{font-size:$h1; line-height:$h1-line-height;}
+.h2{font-size:$h2; line-height:$h2-line-height;}
+.h3{font-size:$h3; line-height:$h3-line-height;}
+.h4{font-size:$h4; line-height:$h4-line-height;}
+.h5{font-size:$h5; line-height:$h5-line-height;}
+.h6{font-size:$h6; line-height:$h6-line-height;}
 
 .font-size-m{font-size: $font-size-m; line-height: $line-height-m;}
 .font-size-l{font-size: $font-size-l; line-height: $line-height-l;}
 .font-size-xl{font-size: $font-size-xl; line-height: $line-height-xl;}
+
+code{font-family: Consolas,"courier new";}
 
 // SPACING
 .spacing{margin-bottom:$space-xl;}
