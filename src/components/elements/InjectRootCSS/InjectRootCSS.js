@@ -1,16 +1,14 @@
 import React from "react";
-import dataJSON from "../../../data/data.json";
 
-const InjectRootCSS = () => {
-	const colorsJSON = dataJSON.colors;
+const InjectRootCSS = (props) => {
+	const varPrefix = props.varPrefix;
 
-	const colorVariables = () => {
-		const colorList = colorsJSON
-			.map((colors) => `--color-${colors.color}:${colors.value};`)
-			.join("");
-		return colorList;
+	const injectVariables = () => {
+		const injection = props.data.map((inject) => `${varPrefix}${inject.var}:${inject.value};`).join("");
+
+		return injection;
 	};
-	const injectCSS = `:root{${colorVariables()}}`;
+	const injectCSS = `:root{${injectVariables()}}`;
 
 	return (
 		<>

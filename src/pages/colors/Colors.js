@@ -7,6 +7,8 @@ import "./ColorsLayout.scss";
 const Colors = () => {
 	return (
 		<>
+			Create another way to INJECT multiple CSS at root for variables (so that we don't duplicate root: value)
+			<br />
 			- add column system
 			<br />
 			- Investigate theming
@@ -36,44 +38,44 @@ const Colors = () => {
 					<div className="box">
 						<h2 className="h2 bold box__title">Basic</h2>
 						<div className="box-palette__grid">
-							<ColorBox color="black" />
-							<ColorBox color="grey-d3" />
-							<ColorBox color="grey-d2" />
-							<ColorBox color="grey-d1" />
-							<ColorBox color="grey" />
-							<ColorBox color="grey-l1" />
-							<ColorBox color="grey-l2" />
-							<ColorBox color="grey-l3" />
-							<ColorBox color="white" />
+							<ColorBox var="black" />
+							<ColorBox var="grey-d3" />
+							<ColorBox var="grey-d2" />
+							<ColorBox var="grey-d1" />
+							<ColorBox var="grey" />
+							<ColorBox var="grey-l1" />
+							<ColorBox var="grey-l2" />
+							<ColorBox var="grey-l3" />
+							<ColorBox var="white" />
 						</div>
 					</div>
 					<div className="box">
 						<h2 className="h2 bold box__title">Primary</h2>
 						<div className="box-palette__grid">
-							<ColorBox color="primary-d2" />
-							<ColorBox color="primary-d1" />
-							<ColorBox color="primary" />
-							<ColorBox color="primary-l1" />
-							<ColorBox color="primary-l2" />
+							<ColorBox var="primary-d2" />
+							<ColorBox var="primary-d1" />
+							<ColorBox var="primary" />
+							<ColorBox var="primary-l1" />
+							<ColorBox var="primary-l2" />
 						</div>
 					</div>
 					<div className="box">
 						<h2 className="h2 bold box__title">Secondary</h2>
 						<div className="box-palette__grid">
-							<ColorBox color="secondary-d2" />
-							<ColorBox color="secondary-d1" />
-							<ColorBox color="secondary" />
-							<ColorBox color="secondary-l1" />
-							<ColorBox color="secondary-l2" />
+							<ColorBox var="secondary-d2" />
+							<ColorBox var="secondary-d1" />
+							<ColorBox var="secondary" />
+							<ColorBox var="secondary-l1" />
+							<ColorBox var="secondary-l2" />
 						</div>
 					</div>
 
 					<div className="box">
 						<h2 className="h2 bold box__title">Accent</h2>
 						<div className="box-palette__grid">
-							<ColorBox color="success" />
-							<ColorBox color="warn" />
-							<ColorBox color="fail" />
+							<ColorBox var="success" />
+							<ColorBox var="warn" />
+							<ColorBox var="fail" />
 						</div>
 					</div>
 					<div className="box">

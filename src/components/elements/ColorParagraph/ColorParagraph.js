@@ -7,16 +7,14 @@ const ColorParagraph = () => {
 	const ParagraphParam = (props) => {
 		return (
 			<>
-				<p className={`color-txt--${props.color}`}>
-					<code>{props.color}</code>
+				<p className={`color-txt--${props.var}`}>
+					<code>{props.var}</code>
 				</p>
 			</>
 		);
 	};
 	const ParagraphsContent = () => {
-		const ParagraphListNames = colorsJSON.map((colorsDetail) => (
-			<ParagraphParam color={colorsDetail.color} />
-		));
+		const ParagraphListNames = colorsJSON.map((colorsDetail, index) => <ParagraphParam color={colorsDetail.var} key={index} />);
 		return <>{ParagraphListNames}</>;
 	};
 	return (
