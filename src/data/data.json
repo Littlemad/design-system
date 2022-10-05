@@ -21,9 +21,9 @@
 		{"name": "embed", "desc": "A symbol indicating embedding code"}
 	],
 	"typography": [
-		{"value": "lato", "var": "lato", "name": "Lato"},
-		{"value": "georgia", "var": "georgia", "name": "Georgia"},
-		{"value": "nunito", "var": "nunito", "name": "Nunito"}
+		{"value": "lato", "var": "primary", "name": "Lato"},
+		{"value": "georgia", "var": "secondary", "name": "Georgia"},
+		{"value": "nunito", "var": "tertiary", "name": "Nunito"}
 	],
 	"colors": [
 		{"value": "#fff", "var": "white", "name": "White"},
@@ -51,5 +51,10 @@
 		{"value": "#390", "var": "success", "name": "Success"},
 		{"value": "#fc0", "var": "warn", "name": "Warning"},
 		{"value": "#c30", "var": "fail", "name": "Failure"}
+	],
+	"links": [
+		{"value": "#00c", "var": "link", "name": "Link"},
+		{"value": "#a4b", "var": "link-visited", "name": "Link Visited"},
+		{"value": "#c30", "var": "link-active", "name": "Link Active"}
 	]
 }

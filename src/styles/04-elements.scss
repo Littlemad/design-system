@@ -8,10 +8,10 @@ body{
 }
 
 // LINK
-a{text-decoration:none; color:$link;}
-a:visited{color:$link-visited;}
+a{text-decoration:none; color:$color-link;}
+a:visited{color:$color-link-visited;}
 a:hover, a:focus{text-decoration:underline;}
-a:active{color:$link-active;}
+a:active{color:$color-link-active;}
 
 // TYPOGRAPHY
 body{
@@ -30,7 +30,6 @@ strong, .bold{font-weight:bold;}
 em, .italic{font-style:italic;}
 p{margin-bottom:$space-s; max-width:toRem(700);}
 
-
 .h1{font-size:$h1; line-height:$h1-line-height;}
 .h2{font-size:$h2; line-height:$h2-line-height;}
 .h3{font-size:$h3; line-height:$h3-line-height;}
@@ -46,6 +45,15 @@ code{font-family: Consolas,"courier new";}
 
 // SPACING
 .spacing{margin-bottom:$space-xl;}
+
+// PADDING
+.padding-xxl{padding:$space-xxl;}
+.padding-xl{padding:$space-xl;}
+.padding-l{padding:$space-l;}
+.padding-m{padding:$space-m;}
+.padding-s{padding:$space-s;}
+.padding-xs{padding:$space-xs;}
+.padding-xxs{padding:$space-xxs;}
 
 // FORMS
 select{

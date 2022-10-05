@@ -70,6 +70,10 @@
 .color-bg--warn{background:$color-warn;}
 .color-bg--fail{background:$color-fail;}
 
+.color-bg--link{background:$color-link;}
+.color-bg--link-visited{background:$color-link-visited;}
+.color-bg--link-active{background:$color-link-active;}
+
 // --TEXT COLORS
 .color-txt--black{color:$color-black;}
 .color-txt--grey-d3{color:$color-grey-d3;}
@@ -96,3 +100,7 @@
 .color-txt--success{color:$color-success;}
 .color-txt--warn{color:$color-warn;}
 .color-txt--fail{color:$color-fail;}
+
+.color-txt--link{color:$color-link;}
+.color-txt--link-visited{color:$color-link-visited;}
+.color-txt--link-active{color:$color-link-active;}

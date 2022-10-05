@@ -7,11 +7,12 @@ import "./styles/main.scss";
 
 const DesignSystem = () => {
 	const colorsJSON = dataJSON.colors;
+	const linkJSON = dataJSON.links;
 	const typographyJSON = dataJSON.typography;
 	return (
 		<>
 			<InjectRootCSS data={colorsJSON} varPrefix="--color-" />
-
+			<InjectRootCSS data={linkJSON} varPrefix="--color-" />
 			<InjectRootCSS data={typographyJSON} varPrefix="--type-" />
 
 			<BrowserRouter>

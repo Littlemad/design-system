@@ -12,7 +12,7 @@
     }
 
     &:visited{
-        color:$link;
+        color:$color-link;
     }
 }
 .main-nav--active{border-bottom:$space-xs solid $color-grey;}

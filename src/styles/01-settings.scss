@@ -57,9 +57,9 @@ $h6: $font-size-m;
 $h6-line-height: $line-height-m;
 
 // --COLORS
-$link: #00c;
-$link-visited: #A4B;
-$link-active: #c00;
+$color-link: var(--color-link);
+$color-link-visited: var(--color-link-visited);
+$color-link-active: var(--color-link-active);
 
 $color-white: var(--color-white);
 $color-grey-l3: var(--color-grey-l3);

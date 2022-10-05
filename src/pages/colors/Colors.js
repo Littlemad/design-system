@@ -1,20 +1,12 @@
 import React from "react";
 import ColorBox from "../../components/elements/colorbox/ColorBox";
-import ColorParagraph from "../../components/elements/ColorParagraph/ColorParagraph";
+import TextColorContrast from "../../components/elements/TextColorContrast/TextColorContrast";
 
 import "./ColorsLayout.scss";
 
 const Colors = () => {
 	return (
 		<>
-			Create another way to INJECT multiple CSS at root for variables (so that we don't duplicate root: value)
-			<br />
-			- add column system
-			<br />
-			- Investigate theming
-			<br />
-			- Review naming system and organization of files
-			<br />
 			<div className="box-palette">
 				<div className="box-palette__primary">
 					<h2 className="h2 bold title--margin">Design Palette</h2>
@@ -79,55 +71,17 @@ const Colors = () => {
 						</div>
 					</div>
 					<div className="box">
+						<h2 className="h2 bold box__title">Link values</h2>
+						<div className="box-palette__grid">
+							<ColorBox var="link" />
+							<ColorBox var="link-visited" />
+							<ColorBox var="link-active" />
+						</div>
+					</div>
+					<div className="box">
 						<h2 className="h2 bold box__title">Text Colors &amp; Contrast</h2>
 						<div className="box-text-colors">
-							<div className="cols">
-								<div className="cols__col color-bg--black">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--grey-d2">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--grey">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--grey-l1">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--grey-l2">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--white">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--primary-d2">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--primary">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--primary-l2">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--secondary-d2">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--secondary">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--secondary-l2">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--success">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--warn">
-									<ColorParagraph />
-								</div>
-								<div className="cols__col color-bg--fail">
-									<ColorParagraph />
-								</div>
-							</div>
+							<TextColorContrast />
 						</div>
 					</div>
 				</div>
