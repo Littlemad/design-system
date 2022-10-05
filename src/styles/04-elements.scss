@@ -28,7 +28,7 @@ body{
 .regular{font-weight:400;}
 strong, .bold{font-weight:bold;}
 em, .italic{font-style:italic;}
-p{margin-bottom:$space-s; max-width:toRem(700);}
+p{margin-bottom:$space-s; max-width:$max-width;}
 
 .h1{font-size:$h1; line-height:$h1-line-height;}
 .h2{font-size:$h2; line-height:$h2-line-height;}

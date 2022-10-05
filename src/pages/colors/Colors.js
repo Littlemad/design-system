@@ -11,7 +11,7 @@ const Colors = () => {
 				<div className="box-palette__primary">
 					<h2 className="h2 bold title--margin">Design Palette</h2>
 					<p className="spacing--top">The colors listed in this area are all loaded directly from the data.json, and injected directly inside the react project as custom-variables</p>
-					<p>We use 4 set of colors:</p>
+					<p>We use these set of colors:</p>
 					<ul className="list spacing">
 						<li className="list__li">
 							<strong>Basic</strong> - Which consist in white, black and palette of greys.
@@ -23,7 +23,10 @@ const Colors = () => {
 							<strong>Secondary</strong> - Your less dominant but still very relevant colors
 						</li>
 						<li className="list__li">
-							<strong>Accents</strong> - Colors used for indicating system related alerts and warnings, like fail red, success green and yellow warnings
+							<strong>Accent</strong> - Colors used for indicating system related alerts and warnings, like fail red, success green and yellow warnings
+						</li>
+						<li className="list__li">
+							<strong>Links</strong> - Colors used for indicating the various status of a Link. Unset (standard Link value), when is being already visited (visited) and when is being pressed (active).
 						</li>
 					</ul>
 

@@ -4,8 +4,6 @@
 // VARIABLES
 
 // --BREAKPOINTS
-
-/* Breakpoints */
 $break-mobile:toRem(576);
 $break-tablet-potrait:toRem(768);
 $break-tablet-landscape:toRem(992);
@@ -55,6 +53,9 @@ $h5-line-height: $font-size-m;
 
 $h6: $font-size-m;
 $h6-line-height: $line-height-m;
+
+// Wrapping content to a readable size
+$max-width:toRem(700);
 
 // --COLORS
 $color-link: var(--color-link);
