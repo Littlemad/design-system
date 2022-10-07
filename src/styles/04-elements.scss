@@ -3,7 +3,7 @@
 
 // GENERIC
 html{height:100%;}
-body{background:var(--bg); min-height:100%;}
+body{background:var(--bg); color:var(--color-txt); min-height:100%;}
 
 // LINK
 a{text-decoration:none; color:$color-link;}

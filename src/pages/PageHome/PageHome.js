@@ -24,7 +24,9 @@ function Home() {
 			- add my flexible column system
 			<br />
 			- Learn about CONTEXT & tidy up code for theming
-			<br />- add data-theme to html page
+			<br />
+			- add data-theme to html page
+			<br />- change to variable colors for the toggle switcher
 		</>
 	);
 }
