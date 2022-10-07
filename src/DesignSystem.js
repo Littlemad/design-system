@@ -55,7 +55,7 @@ const DesignSystem = () => {
 	};
 
 	return (
-		<div data-theme={theme}>
+		<div className="body" data-theme={theme}>
 			<InjectRootCSS data={[...dataJSON.colors, ...dataJSON.links]} varPrefix="--color-" />
 			<InjectRootCSS data={dataJSON.typography} varPrefix="--type-" />
 
