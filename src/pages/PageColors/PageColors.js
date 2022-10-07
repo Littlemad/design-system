@@ -1,6 +1,8 @@
 import React from "react";
 import ColorBox from "components/Colorbox/ColorBox";
 import TextColorContrast from "components/TextColorContrast/TextColorContrast";
+import Highlighter from "components/Highlighter/Highlighter";
+import * as Code from "./PageColors.highlight";
 import "./PageColors.scss";
 
 const Colors = () => {
@@ -28,7 +30,6 @@ const Colors = () => {
 							<strong>Links</strong> - Colors used for indicating the various status of a Link. Unset (standard Link value), when is being already visited (visited) and when is being pressed (active).
 						</li>
 					</ul>
-
 					<div className="box">
 						<h2 className="h2 bold box__title">Basic</h2>
 						<div className="box-palette__grid">
@@ -73,7 +74,7 @@ const Colors = () => {
 						</div>
 					</div>
 					<div className="box">
-						<h2 className="h2 bold box__title">Link values</h2>
+						<h2 className="h2 bold box__title">Links</h2>
 						<div className="box-palette__grid">
 							<ColorBox var="link" />
 							<ColorBox var="link-visited" />
@@ -85,6 +86,17 @@ const Colors = () => {
 						<div className="box-text-colors">
 							<TextColorContrast />
 						</div>
+					</div>
+					<div className="box">
+						<h2 className="h2 bold box__title">Using pre-generated class names</h2>
+						<p>When you want to assign a color to a text you can use these classes, depending on your primary colors defined in the JSON data file of your project</p>
+						<Highlighter code={Code.TextColor1} language="markup" />
+						<span className="color-txt--primary">Primary colored text</span>
+						<br />
+						<br />
+						<p>If you need instead to assign a background, you can use this kind of classname</p>
+						<Highlighter code={Code.BackgroundColor1} language="markup" />
+						<span className="color-bg--grey-d1">Background grey color</span>
 					</div>
 				</div>
 			</div>

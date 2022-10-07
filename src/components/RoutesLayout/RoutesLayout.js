@@ -8,12 +8,14 @@ import PageTypography from "pages/PageTypography/PageTypography";
 import PageColors from "pages/PageColors/PageColors";
 import PageGridSystem from "pages/PageGridSystem/PageGridSystem";
 
+import Toggle from "components/Toggle/Toggle";
 import "./RoutesLayout.scss";
 
-function RoutesLayout() {
+function RoutesLayout(props) {
 	return (
 		<>
 			<div className="page">
+				<Toggle onChange={props.onChange} className="page__theme" />
 				<header className="main-header">
 					<h1 className="main-header__title h1">Design System</h1>
 				</header>

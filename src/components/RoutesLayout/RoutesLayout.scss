@@ -4,6 +4,6 @@
 	min-height:100vh;
 	padding:$space-xl; 
 	margin:auto; 
-	background:$color-white;
+	background:var(--bg-content);
 }
 .main-header, .main-content{text-align:left;}

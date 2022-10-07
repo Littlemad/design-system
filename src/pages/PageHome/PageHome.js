@@ -21,14 +21,10 @@ function Home() {
 					</ul>
 				</div>
 			</div>
-			- Create another way to INJECT multiple CSS at root for variables (so that we don't duplicate root: value) FIX LOADING TYPOGRAPHY by the VARIABLE
-			<br />
 			- add my flexible column system
 			<br />
-			- Investigate theming
-			<br />
-			- Review naming system and organization of files
-			<br />
+			- Learn about CONTEXT & tidy up code for theming
+			<br />- add data-theme to html page
 		</>
 	);
 }

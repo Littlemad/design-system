@@ -8,6 +8,7 @@ const InjectRootCSS = (props) => {
 
 		return injection;
 	};
+
 	const injectCSS = `:root{${injectVariables()}}`;
 
 	return (

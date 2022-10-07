@@ -20,10 +20,10 @@ const PageIcons = () => {
 				<p>Create a JSON with your icon list of names matching the symbol id name</p>
 				<Highlighter code={Code.SingleIcon1} language="js" />
 				<br />
-				Male an SVG Sprite similar to this example filled with SVG Symbol all of the same viewbox size to keep size consistency. (You can build one using{" "}
+				Male an SVG Sprite similar to this example filled with SVG Symbol all of the same viewbox size to keep size consistency. (You can build one using
 				<a href="https://icomoon.io/" target="_blank" rel="noreferrer">
 					Iconmoon
-				</a>{" "}
+				</a>
 				service).
 				<Highlighter code={Code.SingleIcon2} language="markup" />
 				<br />

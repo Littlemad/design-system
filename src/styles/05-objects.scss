@@ -104,3 +104,19 @@
 .color-txt--link{color:$color-link;}
 .color-txt--link-visited{color:$color-link-visited;}
 .color-txt--link-active{color:$color-link-active;}
+
+
+// --THEMING
+
+:root, [data-theme="light"] {
+    --bg: var(--color-grey);
+    --bg-content: var(--color-white);
+    --color-text: var(--color-grey-d3);
+}
+
+[data-theme="dark"] {
+    --bg: var(--color-grey-d2);
+    --bg-content: var(--color-black);
+    --color-text: var(--color-grey-l3);
+}
+

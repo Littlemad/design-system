@@ -3,9 +3,7 @@
 
 // GENERIC
 html{height:100%;}
-body{
-    background:$color-grey-l2; min-height:100%;
-}
+body{background:var(--bg); min-height:100%;}
 
 // LINK
 a{text-decoration:none; color:$color-link;}
