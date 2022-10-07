@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeLayout.scss";
+import "./PageHome.scss";
 
 function Home() {
 	return (

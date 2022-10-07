@@ -1,5 +1,5 @@
-@use '../../../styles/01-settings' as *;
-@use '../../../styles/02-tools' as *;
+@use 'styles/01-settings' as *;
+@use 'styles/02-tools' as *;
 
 .colorbox{width:100%; border:1px solid $color-grey;}
 .colorbox__name{padding:$space-s $space-m;}

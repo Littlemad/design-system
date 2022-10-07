@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import dataJSON from "../../data/data.json";
-import Select from "../../components/elements/select/Select";
-import "./TypographyLayout.scss";
+import dataJSON from "data/data.json";
+import Select from "components/Select/Select";
+import "./PageTypography.scss";
 
 function Typography() {
 	const options = dataJSON.typography;

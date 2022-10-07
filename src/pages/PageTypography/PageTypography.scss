@@ -1,5 +1,5 @@
-@use '../../styles/01-settings' as *;
-@use '../../styles/02-tools' as *;
+@use 'styles/01-settings' as *;
+@use 'styles/02-tools' as *;
 
 .box-typography__select-font{
     margin: $space-xl 0 $space-m;

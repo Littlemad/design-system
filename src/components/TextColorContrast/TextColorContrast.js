@@ -1,11 +1,10 @@
 import React from "react";
-import dataJSON from "../../../data/data.json";
+import dataJSON from "data/data.json";
 
 const colorsJSON = dataJSON.colors;
 const linksJSON = dataJSON.links;
 
 const TextColorContrast = () => {
-	// Passing data from JSON
 	const ColoredParagraphs = () => {
 		const loopParagraphs = colorsJSON.map((colorsParagraph) => (
 			<p key={colorsParagraph.var} className={`color-txt--${colorsParagraph.var}`}>

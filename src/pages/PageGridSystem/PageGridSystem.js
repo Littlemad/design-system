@@ -1,6 +1,5 @@
 import React from "react";
-
-import "./GridSystemLayout.scss";
+import "./PageGridSystem.scss";
 
 function GridSystem() {
 	return <>Page Grid System</>;

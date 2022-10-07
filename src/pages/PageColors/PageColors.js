@@ -1,8 +1,7 @@
 import React from "react";
-import ColorBox from "../../components/elements/colorbox/ColorBox";
-import TextColorContrast from "../../components/elements/TextColorContrast/TextColorContrast";
-
-import "./ColorsLayout.scss";
+import ColorBox from "components/Colorbox/ColorBox";
+import TextColorContrast from "components/TextColorContrast/TextColorContrast";
+import "./PageColors.scss";
 
 const Colors = () => {
 	return (

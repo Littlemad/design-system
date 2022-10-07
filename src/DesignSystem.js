@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter} from "react-router-dom";
-import InjectRootCSS from "./components/elements/InjectRootCSS/InjectRootCSS";
-import RoutesLayout from "./components/navigation/RoutesLayout";
+import InjectRootCSS from "./components/InjectRootCSS/InjectRootCSS";
+import RoutesLayout from "./components/RoutesLayout/RoutesLayout";
 import dataJSON from "./data/data.json";
 import "./styles/main.scss";
 

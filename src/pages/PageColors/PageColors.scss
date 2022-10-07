@@ -1,4 +1,4 @@
-@use '../../styles/01-settings' as *;
+@use 'styles/01-settings' as *;
 
 .box-palette__grid{
     display:grid; grid-gap:$space-m;

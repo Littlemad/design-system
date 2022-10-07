@@ -1,17 +1,11 @@
 import React from "react";
-import dataJSON from "../../../data/data.json";
+import dataJSON from "data/data.json";
 import "./ColorBox.scss";
 
-const colorsJSON = dataJSON.colors;
-const linksJSON = dataJSON.links;
-
 const ColorBox = (props) => {
-	var myColor = colorsJSON.find((e) => e.var === props.var);
-
-	// TODO: revise this, it is not decent code
-	if (myColor === undefined) {
-		myColor = linksJSON.find((e) => e.var === props.var);
-	}
+	var myColor = Object.values(dataJSON)
+		.flat()
+		.find((e) => e.var === props.var);
 
 	return (
 		<>

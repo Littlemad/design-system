@@ -1,12 +1,12 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom";
-import Navigation from "./Navigation";
+import Navigation from "components/Navigation/Navigation";
 
-import PageHome from "../../pages/home/Home";
-import PageIcons from "../../pages/icons/Icons";
-import PageTypography from "../../pages/typography/Typography";
-import PageColors from "../../pages/colors/Colors";
-import PageGridSystem from "../../pages/grid/GridSystem";
+import PageHome from "pages/PageHome/PageHome";
+import PageIcons from "pages/PageIcons/PageIcons";
+import PageTypography from "pages/PageTypography/PageTypography";
+import PageColors from "pages/PageColors/PageColors";
+import PageGridSystem from "pages/PageGridSystem/PageGridSystem";
 
 import "./RoutesLayout.scss";
 
