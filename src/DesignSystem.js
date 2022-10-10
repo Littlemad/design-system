@@ -54,13 +54,15 @@ const DesignSystem = () => {
 		setTheme(newTheme);
 	};
 
+	const isChecked = theme === "light" ? false : true;
+
 	return (
 		<div className="body" data-theme={theme}>
-			<InjectRootCSS data={[...dataJSON.colors, ...dataJSON.links]} varPrefix="--color-" />
+			<InjectRootCSS data={[...dataJSON.text, ...dataJSON.colors, ...dataJSON.links]} varPrefix="--color-" />
 			<InjectRootCSS data={dataJSON.typography} varPrefix="--type-" />
 
 			<BrowserRouter>
-				<RoutesLayout onChange={() => clickHandler()} />
+				<RoutesLayout checked={isChecked} onChange={() => clickHandler()} />
 			</BrowserRouter>
 		</div>
 	);

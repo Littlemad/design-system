@@ -6,4 +6,5 @@
 	margin:auto; 
 	background:var(--bg-content);
 }
+.main-header{display:flex; justify-content:space-between; align-items:center;}
 .main-header, .main-content{text-align:left;}

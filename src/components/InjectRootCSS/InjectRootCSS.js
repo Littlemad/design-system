@@ -9,8 +9,7 @@ const InjectRootCSS = (props) => {
 		const injection = props.data
 			.map(function (inject) {
 				if (inject.themeDark) {
-					themeDark = `${varPrefix}dark-${inject.var}:${inject.themeDark};`;
-					console.log(themeDark);
+					themeDark = `${varPrefix}darkTheme-${inject.var}:${inject.themeDark};`;
 				}
 				themeLight = `${varPrefix}${inject.var}:${inject.value};`;
 

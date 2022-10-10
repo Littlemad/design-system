@@ -15,9 +15,9 @@ function RoutesLayout(props) {
 	return (
 		<>
 			<div className="page">
-				<Toggle onChange={props.onChange} className="page__theme" />
 				<header className="main-header">
 					<h1 className="main-header__title h1">Design System</h1>
+					<Toggle checked={props.checked} onChange={props.onChange} className="page__theme" />
 				</header>
 				<Navigation />
 				<main className="main-content">

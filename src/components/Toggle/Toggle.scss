@@ -1,5 +1,7 @@
+@use "styles/01-settings" as *;
+
 .toggle {
-    position:relative; display:inline-block; width:60px; height:34px;
+    position:relative; display:inline-block; width:46px; height:24px;
 }
 
 .toggle__input {opacity:0; width:0; height:0;}
@@ -10,12 +12,12 @@
 }
 
 .toggle__slider:before {
-  content:""; position:absolute; height:26px; width:26px;
+  content:""; position:absolute; height:16px; width:16px;
   left:4px; bottom:4px; background-color:white; transition:.4s; border-radius: 50%;
 }
 
 .toggle__input:checked + .toggle__slider {
-  background-color: #2196F3;
+  background-color: $color-primary-l1;
 }
 
 .toggle__input:focus + .toggle__slider {

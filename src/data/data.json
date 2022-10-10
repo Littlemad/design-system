@@ -1,4 +1,5 @@
 {
+	"text": [{"value": "#000", "var": "text", "themeDark": "#fff", "name": "Text color"}],
 	"icons": [
 		{"name": "arrow", "desc": "An arrow indicating a direction"},
 		{"name": "home", "desc": "An home icon"},
