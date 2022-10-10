@@ -104,16 +104,3 @@
 .color-txt--link{color:$color-link;}
 .color-txt--link-visited{color:$color-link-visited;}
 .color-txt--link-active{color:$color-link-active;}
-
- // --THEMING
- :root { // light theme default
-    --bg: var(--color-grey-l2);
-    --bg-content: var(--color-white);
-    --color-txt: var(--color-grey-d3);
-}
-
-[data-theme="dark"] {
-    --bg: var(--color-grey-d2);
-    --bg-content: var(--color-black);
-    --color-txt: var(--color-white);
-}

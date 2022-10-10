@@ -1,11 +1,27 @@
 import React from "react";
 
 const InjectRootCSS = (props) => {
-	const varPrefix = props.varPrefix;
-
 	const injectVariables = () => {
-		const injection = props.data.map((inject) => `${varPrefix}${inject.var}:${inject.value};`).join("");
+		const varPrefix = props.varPrefix;
+		let themeDark = "";
+		let themeLight = "";
 
+		const injection = props.data
+			.map(function (inject) {
+				if (inject.themeDark) {
+					themeDark = `${varPrefix}dark-${inject.var}:${inject.themeDark};`;
+					console.log(themeDark);
+				}
+				themeLight = `${varPrefix}${inject.var}:${inject.value};`;
+
+				const themes = `${themeLight}${themeDark}`;
+
+				themeDark = "";
+				themeLight = "";
+
+				return themes;
+			})
+			.join("");
 		return injection;
 	};
 

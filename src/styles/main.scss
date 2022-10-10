@@ -1,5 +1,7 @@
 // ITCSS: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 
+@use "./00-load-fonts.scss" as *;
+
 // Variable configurations for things like colors, fonts, sizes, etc…
 @use "./01-settings.scss" as *;
 

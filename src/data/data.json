@@ -53,8 +53,8 @@
 		{"value": "#c30", "var": "fail", "name": "Failure"}
 	],
 	"links": [
-		{"value": "#00c", "var": "link", "name": "Link"},
-		{"value": "#a4b", "var": "link-visited", "name": "Link Visited"},
+		{"value": "#00c", "themeDark": "#C1D6EB", "var": "link", "name": "Link"},
+		{"value": "#a4b", "themeDark": "#d0adf0", "var": "link-visited", "name": "Link Visited"},
 		{"value": "#c30", "var": "link-active", "name": "Link Active"}
 	]
 }
