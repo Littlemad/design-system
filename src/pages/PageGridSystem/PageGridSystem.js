@@ -1,4 +1,6 @@
 import React from "react";
+import Highlighter from "../../components/Highlighter/Highlighter";
+import * as Code from "./PageGridSystem.highlight";
 import "./PageGridSystem.scss";
 
 function GridSystem() {
@@ -13,20 +15,38 @@ function GridSystem() {
 			<div className="box flexible-grid">
 				<h3 className="h2 bold box__title">Responsive Grid</h3>
 				<p>*working in progress*</p>
-				<div className="experiment1 cols">
+				<div className="exp1 cols spacing">
 					<div className="col">Col1</div>
-					<div className="col">Col2</div>
-					<div className="col">Col3</div>
-					<div className="col">Col4</div>
-					<div className="col">Col5</div>
-					<div className="col">Col6</div>
-					<div className="col">Col7</div>
-					<div className="col">Col8</div>
-					<div className="col">Col9</div>
-					<div className="col">Col10</div>
-					<div className="col">Col11</div>
-					<div className="col">Col12</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col">Col1</div>
+					<div className="col col--span2">Col2</div>
+					<div className="col col--span2">Col2</div>
+					<div className="col col--span2">Col2</div>
+					<div className="col col--span2">Col2</div>
+					<div className="col col--span2">Col2</div>
+					<div className="col col--span2">Col2</div>
+					<div className="col col--span3">Col3</div>
+					<div className="col col--span3">Col3</div>
+					<div className="col col--span3">Col3</div>
+					<div className="col col--span3">Col3</div>
+					<div className="col col--span4">Col4</div>
+					<div className="col col--span4">Col4</div>
+					<div className="col col--span4">Col4</div>
+					<div className="col col--span6">Col6</div>
+					<div className="col col--span6">Col6</div>
+					<div className="col col--span12">Col12</div>
 				</div>
+				<p>Lore ipsum docet aliquam</p>
+				<Highlighter code={Code.ColSpan1} language="markup" />
 			</div>
 		</>
 	);

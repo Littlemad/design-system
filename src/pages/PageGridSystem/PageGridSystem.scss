@@ -5,4 +5,4 @@
     .col{padding:$space-xs $space-s; background:$color-grey-l1; color:$color-black;}
     .col:nth-child(2n+0){background:$color-primary-d1; color:$color-white;}
 }
-.experiment1.cols{grid-template-columns: repeat(12, 1fr);}
+.exp1.cols{}

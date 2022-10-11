@@ -1,6 +1,14 @@
 @use 'styles/01-settings' as *;
 @use 'styles/02-tools' as *;
 
+.box-typography .cols{
+    grid-template-columns:unset;
+}
+
+.box-headings .cols{
+    grid-template-columns:repeat(3, 1fr);
+}
+
 .box-typography__select-font{
     margin: $space-xl 0 $space-m;
     font-weight: bold; 

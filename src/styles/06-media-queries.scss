@@ -1,15 +1,30 @@
 @use '01-settings' as *;
 
+
 @media only screen and (min-width: $break-mobile){ // 576px
     .page{width:$break-mobile;}
 }
 
 @media only screen and (min-width: $break-tablet-potrait){ // 768px
     .page{width:$break-tablet-potrait;}
+    .cols{grid-template-columns: repeat(2, 1fr);}
 }
 
 @media only screen and (min-width: $break-tablet-landscape){ // 992px
     .page{width:$break-tablet-landscape;}
+    .cols{grid-template-columns: repeat(12, 1fr);}
+    .col--span1{grid-column:span 1}
+    .col--span2{grid-column:span 2}
+    .col--span3{grid-column:span 3}
+    .col--span4{grid-column:span 4}
+    .col--span5{grid-column:span 5}
+    .col--span6{grid-column:span 6}
+    .col--span7{grid-column:span 7}
+    .col--span8{grid-column:span 8}
+    .col--span9{grid-column:span 9}
+    .col--span10{grid-column:span 10}
+    .col--span11{grid-column:span 11}
+    .col--span12{grid-column:span 12}
 }
 
 @media only screen and (min-width: $break-desktop){ // 1200px

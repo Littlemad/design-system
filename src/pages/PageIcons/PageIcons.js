@@ -1,8 +1,8 @@
 import React from "react";
 import Highlighter from "../../components/Highlighter/Highlighter";
+import * as Code from "./PageIcons.highlight";
 import SvgIcon from "../../components/SvgIcon/SvgIcon";
 import SvgIconList from "../../components/SvgIconList/SvgIconList";
-import * as Code from "./PageIcons.highlight";
 
 const PageIcons = () => {
 	return (
