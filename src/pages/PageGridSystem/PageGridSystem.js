@@ -4,6 +4,21 @@ import * as Code from "./PageGridSystem.highlight";
 import "./PageGridSystem.scss";
 
 function GridSystem() {
+	// it helps me to build column structure quite quickly
+	const columnGenerator = (quantityDivs, gridClasses) => {
+		const basciGridStructure = (
+			<div className={gridClasses}>
+				{[...Array(quantityDivs)].map((_, i) => (
+					<div key={i} className={`grid__col grid__col${i + 1}`}>
+						Col{i + 1}
+					</div>
+				))}
+			</div>
+		);
+
+		return basciGridStructure;
+	};
+
 	return (
 		<>
 			<div className="box-grid-system">
@@ -15,36 +30,8 @@ function GridSystem() {
 			<div className="box flexible-grid">
 				<h3 className="h2 bold box__title">Responsive Grid</h3>
 				<p>*working in progress*</p>
-				<div className="exp1 cols spacing">
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col">Col1</div>
-					<div className="col col--span2">Col2</div>
-					<div className="col col--span2">Col2</div>
-					<div className="col col--span2">Col2</div>
-					<div className="col col--span2">Col2</div>
-					<div className="col col--span2">Col2</div>
-					<div className="col col--span2">Col2</div>
-					<div className="col col--span3">Col3</div>
-					<div className="col col--span3">Col3</div>
-					<div className="col col--span3">Col3</div>
-					<div className="col col--span3">Col3</div>
-					<div className="col col--span4">Col4</div>
-					<div className="col col--span4">Col4</div>
-					<div className="col col--span4">Col4</div>
-					<div className="col col--span6">Col6</div>
-					<div className="col col--span6">Col6</div>
-					<div className="col col--span12">Col12</div>
-				</div>
+				{columnGenerator(28, "spacing exp1 grid grid--gap-m grid--col-pad-s")}
+
 				<p>Lore ipsum docet aliquam</p>
 				<Highlighter code={Code.ColSpan1} language="markup" />
 			</div>

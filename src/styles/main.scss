@@ -2,6 +2,9 @@
 
 @use "./00-load-fonts.scss" as *;
 
+// Load grid system as external tool
+@use "./grid-system.scss" as *;
+
 // Variable configurations for things like colors, fonts, sizes, etc…
 @use "./01-settings.scss" as *;
 
@@ -19,6 +22,7 @@
 
 // Define basic values for main layout to make it responsive
 @use "./06-media-queries.scss" as *;
+
 
 /*
 - I added the rest of CSS Components directly inside each component

@@ -1,8 +1,28 @@
 @use 'styles/01-settings' as *;
-
+@use 'styles/grid-system' as *;
 
 .flexible-grid{
-    .col{padding:$space-xs $space-s; background:$color-grey-l1; color:$color-black;}
-    .col:nth-child(2n+0){background:$color-primary-d1; color:$color-white;}
+    .grid__col{background:$color-grey-l1; color:$color-black;}
+    .grid__col:nth-child(2n+0){background:$color-primary-d1; color:$color-white;}
 }
-.exp1.cols{}
+
+
+    .exp1{
+        @include column(13, 18) {
+            @include col-size-2;
+        }
+
+        @include column(19, 22) {
+            @include col-size-3;
+        }
+
+        @include column(23, 25) {
+            @include col-size-4;
+        }
+        @include column(26, 27) {
+            @include col-size-6;
+        }
+        .grid__col28 {
+            @include col-size-12;
+        }
+    }
