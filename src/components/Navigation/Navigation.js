@@ -9,27 +9,27 @@ function Navigation() {
 		<nav className="main-nav">
 			<ul className="main-nav__ul">
 				<li className="main-nav__li">
-					<NavLink className={myClass} to="/">
+					<NavLink className={myClass} to="/design-system/">
 						Home
 					</NavLink>
 				</li>
 				<li className="main-nav__li">
-					<NavLink className={myClass} to="/colors">
+					<NavLink className={myClass} to="/design-system/colors">
 						Colors
 					</NavLink>
 				</li>
 				<li className="main-nav__li">
-					<NavLink className={myClass} to="/grid-system">
+					<NavLink className={myClass} to="/design-system/grid-system">
 						Grid System
 					</NavLink>
 				</li>
 				<li className="main-nav__li">
-					<NavLink className={myClass} to="/icons">
+					<NavLink className={myClass} to="/design-system/icons">
 						Icons
 					</NavLink>
 				</li>
 				<li className="main-nav__li">
-					<NavLink className={myClass} to="/typography">
+					<NavLink className={myClass} to="/design-system/typography">
 						Typography
 					</NavLink>
 				</li>

@@ -22,11 +22,11 @@ function RoutesLayout(props) {
 				<Navigation />
 				<main className="main-content">
 					<Routes>
-						<Route path="/" element={<PageHome />} />
-						<Route path="icons" element={<PageIcons />} />
-						<Route path="typography" element={<PageTypography />} />
-						<Route path="colors" element={<PageColors />} />
-						<Route path="grid-system" element={<PageGridSystem />} />
+						<Route path="/design-system/" element={<PageHome />} />
+						<Route path="/design-system/icons" element={<PageIcons />} />
+						<Route path="/design-system/typography" element={<PageTypography />} />
+						<Route path="/design-system/colors" element={<PageColors />} />
+						<Route path="/design-system/grid-system" element={<PageGridSystem />} />
 					</Routes>
 				</main>
 			</div>

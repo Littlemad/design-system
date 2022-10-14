@@ -6,23 +6,22 @@
     .grid__col:nth-child(2n+0){background:$color-primary-d1; color:$color-white;}
 }
 
-
-    .exp1{
-        @include column(13, 18) {
-            @include col-size-2;
-        }
-
-        @include column(19, 22) {
-            @include col-size-3;
-        }
-
-        @include column(23, 25) {
-            @include col-size-4;
-        }
-        @include column(26, 27) {
-            @include col-size-6;
-        }
-        .grid__col28 {
-            @include col-size-12;
-        }
+.exp1{
+    @include column(13, 18) {
+        @include col-size-2;
     }
+
+    @include column(19, 22) {
+        @include col-size-3;
+    }
+
+    @include column(23, 25) {
+        @include col-size-4;
+    }
+    @include column(26, 27) {
+        @include col-size-6;
+    }
+    .grid__col28 {
+        @include col-size-12;
+    }
+}
