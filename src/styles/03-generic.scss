@@ -1,3 +1,5 @@
+@use 'styles/02-tools' as *;
+
 // RESET
 // http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126
 
@@ -178,4 +180,10 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup */
 	 display: inline;
  }
  
- /* End of prism.js syntax highlighting*/
+
+ // Modification to original code of prism.js
+ pre[class*="language-"]{
+	max-height:toRem(250);
+ }
+
+// END of prism.js

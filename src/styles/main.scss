@@ -2,9 +2,6 @@
 
 @use "./00-load-fonts.scss" as *;
 
-// Load grid system as external tool
-@use "./grid-system.scss" as *;
-
 // Variable configurations for things like colors, fonts, sizes, etc…
 @use "./01-settings.scss" as *;
 
@@ -13,6 +10,9 @@
 
 // CSS resets and normalizing rules to create a foundation for your styles
 @use "./03-generic.scss" as *;
+
+// Wanted to keep grid CSS in one single place (all rules for grid is in here: media queries, mixins, classes etc..)
+@use "./grid-system.scss" as *;
 
 // Style rules for bare HTML elements (like h1 or button)
 @use "./04-elements.scss" as *;

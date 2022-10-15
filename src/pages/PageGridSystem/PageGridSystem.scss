@@ -1,9 +1,11 @@
 @use 'styles/01-settings' as *;
 @use 'styles/grid-system' as *;
 
-.flexible-grid{
+.box-grid-system{
     .grid__col{background:$color-grey-l1; color:$color-black;}
     .grid__col:nth-child(2n+0){background:$color-primary-d1; color:$color-white;}
+
+
 }
 
 .exp1{
@@ -24,4 +26,67 @@
     .grid__col28 {
         @include col-size-12;
     }
+}
+
+
+.exp2{
+    .grid__col1 {
+        grid-column:span 2 / 3;
+    }
+
+    .grid__col2 {
+        grid-column:span 6 / 13;
+    }
+
+    .grid__col3 {
+        grid-column:span 4 / 7;
+    }
+
+    .grid__col4 {
+        grid-column:span 4 / 13;
+    }
+            
+    .grid__col5 {
+        grid-column:span 4 / 5;
+    }
+
+    .grid__col6 {
+        grid-column:span 4 / 11;
+    }
+
+    .grid__col7 {
+        grid-column:span 3 / 7;
+    }
+
+    .grid__col8 {
+        grid-column:span 3 / 10;
+    }
+
+    .grid__col9 {
+        grid-column:span 10 / 13;
+    }   
+
+    .grid__col10 {
+        grid-column:span 6 / 7;
+        grid-row:span 2;
+    }
+
+    @include column(11, 12) {
+        grid-column:span 3 / 13;
+    }
+
+    .grid__col13 {
+        grid-column:span 8 / 11;
+    }
+    .grid__col14 {
+        grid-column:span 6 / 11;
+    }
+
+    .grid__col15 {
+        grid-column:span 4 / 6;
+    }
+
+    @include column(16, 18) {
+        @include col-size-2;
+    } 
 }

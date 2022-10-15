@@ -13,7 +13,6 @@ a:active{color:$color-link-active;}
 
 // TYPOGRAPHY
 .body{
-    text-align:center;
     font-family: $font-family-primary;
     font-size: $font-size-m; 
     line-height: $line-height-m;
@@ -59,3 +58,33 @@ select{
     padding: $space-xs;
     margin-left:$space-s;
 }
+
+.table{
+    width:100%; border:3px solid;
+    td, th{padding:$space-s;}
+}
+
+// TABLE
+:root { // light theme default
+    .table{
+        border-color:$color-black;
+        td, th{border:1px dotted $color-grey-d1;}
+        &.table--crossreference{
+                th, td:first-child{background:$color-grey-l2;
+            }
+        }
+    }
+}
+
+[data-theme="dark"] {
+    .table{
+        border-color:$color-white;
+        td, th{border-color:$color-grey-l1;}
+        &.table--crossreference{
+            th, td:first-child{
+                background:$color-grey-d3;
+            }
+        }
+    }
+}
+
