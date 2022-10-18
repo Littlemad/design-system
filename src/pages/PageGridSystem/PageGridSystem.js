@@ -119,6 +119,24 @@ function GridSystem() {
 
 					<ColumnGenerator col={18} classname="spacing exp2 grid grid--gap-m grid--col-pad-s" rtl={true} />
 				</div>
+				<div className="box">
+					<h3 className="h2 bold box__title">Grid example of vertical positioning</h3>
+					<p>Simple vertical columns</p>
+					<ColumnGenerator col={18} classname="spacing exp3 grid grid--gap-m grid--col-pad-s" />
+
+					<p>Simple vertical columns: SASS Code</p>
+					<Highlighter code={Code.GridCSS3} language="css" />
+
+					<p>Asymmetric vertical columns</p>
+					<ColumnGenerator col={6} classname="spacing exp4 grid grid--gap-m grid--col-pad-s" />
+					<p>Asymmetric vertical columns: SASS Code</p>
+					<Highlighter code={Code.GridCSS4} language="css" />
+
+					<p>Combining row and column positioning</p>
+					<ColumnGenerator col={28} classname="exp5 grid grid--gap-m grid--col-pad-s" />
+					<p>Combining row and column positioning: SASS Code</p>
+					<Highlighter code={Code.GridCSS5} language="css" />
+				</div>
 			</div>
 		</>
 	);
