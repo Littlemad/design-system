@@ -56,15 +56,7 @@
     &-xl {grid-gap: $space-xl 0;}
 }
 
-.grid__col {
-    @include col-size-12;
-    word-break: break-word;
-}
-  
-// Tablet size
-@media screen and (min-width: 481px) {
-    .grid__col{@include col-size-6;}
-
+@media screen and (min-width: 576px) {
     .grid--gap {
         &-xs {grid-gap: $space-xs;}
         &-s {grid-gap: $space-s;}
@@ -75,6 +67,19 @@
 }
 
 // Medium Desktop Size
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .grid__col{@include col-size-1;} // basic value of the length of the column
+}
+
+// MAX WIDTH
+@media screen and (max-width: 991px) {
+    .grid__col{word-break:break-word;}
+}
+
+@media screen and (max-width: 767px) {
+    .grid__col{grid-column:span 6!important;}
+}
+
+@media screen and (max-width: 575px) {
+    .grid__col{grid-column:span 12!important;}
 }

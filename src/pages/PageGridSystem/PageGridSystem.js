@@ -26,6 +26,7 @@ function GridSystem() {
 				<p>One of the most important part of a webpage it is to have a decent grid system that is useful, easy to customize and able to build an application that is responsive while keeping the grid.</p>
 				<p>The grid system is based on 12 grids, so that it easy divisible by 2, 3, 4 and 6 in the case that you want to have a very detailed grid system to adapt to whatever grid you need.</p>
 				<p>You can get the file "grid-system.scss" and use it in your project as drag and drop.</p>
+				<p>All these example will reset to 2 columns system less than 768px and one column system for less than 576px</p>
 
 				<h2 className="bold">Sizes modifiers for gaps and paddings for the grid tag</h2>
 
@@ -133,7 +134,7 @@ function GridSystem() {
 					<Highlighter code={Code.GridCSS4} language="css" />
 
 					<p>Combining row and column positioning</p>
-					<ColumnGenerator col={28} classname="exp5 grid grid--gap-m grid--col-pad-s" />
+					<ColumnGenerator col={28} classname="spacing exp5 grid grid--gap-m grid--col-pad-s" />
 					<p>Combining row and column positioning: SASS Code</p>
 					<Highlighter code={Code.GridCSS5} language="css" />
 				</div>
