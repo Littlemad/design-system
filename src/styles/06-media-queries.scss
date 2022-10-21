@@ -13,10 +13,12 @@
 @media only screen and (min-width: $break-tablet-potrait){ // 768px
     .page{width:$break-tablet-potrait;}
     .svgiconlist--grid{grid-template-columns:1fr 1fr 1fr 1fr;}
+    .box-headings .grid{grid-template-columns:1fr 1fr;}
 }
 
 @media only screen and (min-width: $break-tablet-landscape){ // 992px
     .page{width:$break-tablet-landscape;}
+    .box-headings .grid{grid-template-columns:1fr 1fr 1fr;}
 }
 
 @media only screen and (min-width: $break-desktop){ // 1200px

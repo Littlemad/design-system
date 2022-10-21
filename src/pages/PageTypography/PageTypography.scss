@@ -5,8 +5,8 @@
     grid-template-columns:unset;
 }
 
-.box-headings .cols{
-    grid-template-columns:repeat(3, 1fr);
+.box-headings .grid{
+    grid-template-columns:1fr;
 }
 
 .box-typography__select-font{

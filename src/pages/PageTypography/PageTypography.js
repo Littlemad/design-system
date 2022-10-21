@@ -21,7 +21,7 @@ function Typography() {
 					<h3 className="h2 bold box__title">Headings</h3>
 
 					<div className="box-headings__titles">
-						<div className="cols">
+						<div className="grid">
 							<div className="col col1">
 								<h1 className="h1">h1 - Typography</h1>
 								<h2 className="h2">h2 - Typography</h2>
