@@ -31,16 +31,6 @@
     .main-header, .main-nav__ul{flex-direction:column;}
 }
 
-/* NOT USED
-@media only screen and (min-width: $break-desktop-l){ // 1440px
-
-}
-
-@media only screen and (min-width: $break-desktop-xl){ // 1920px
-
-}
-*/
-
 /* TABLE MEDIA QUERIES for mobile & tablet */
 @media 
 only screen and (max-width: $break-mobile),
