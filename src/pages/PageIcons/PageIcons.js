@@ -36,7 +36,7 @@ const PageIcons = () => {
 					<br />
 					Insert a Component and add your custom label
 					<Highlighter code={Code.SingleIcon5} language="js" />
-					<SvgIcon name="home" size="l" label="test" />
+					<SvgIcon name="home" size="l" label="Custom description" />
 				</div>
 
 				<div className="box-icon-list">
